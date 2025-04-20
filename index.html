@@ -398,8 +398,67 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-container">
+                <p class="footer-form-header">Subscribe</p>
+                <form class="footer-form">
+                    <input class="footer-input" type="email" placeholder="E-mail" required>
+                    <button class="footer-send-button" type="submit">
+                        <span>Subscribe</span>
+                        <svg class="footer-send-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <div class="hero-modal-overlay">
+        <div class="hero-modal">
+            <button class="hero-modal-close-button" type="button">
+                <svg class="hero-modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="hero-modal-header">Leave your contacts and we will call you back</p>
+            <label for="user-name" class="hero-modal-label">Name</label>
+            <div class="hero-modal-input-wrapper">
+                <input class="hero-modal-input" type="text" id="user-name" name="user-name">
+                <svg class="hero-modal-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-user"></use>
+                </svg>
+            </div>
+            <label for="user-phone" class="hero-modal-label">Phone</label>
+            <div class="hero-modal-input-wrapper">
+                <input class="hero-modal-input" type="tel" id="user-phone" name="user-phone">
+                <svg class="hero-modal-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </div>
+            <label for="user-email" class="hero-modal-label">Email</label>
+            <div class="hero-modal-input-wrapper">
+                <input class="hero-modal-input" type="email" id="user-email" name="user-email">
+                <svg class="hero-modal-icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+            </div>
+            <label for="user-comment" class="hero-modal-label">Comment</label>
+            <textarea rows="5" class="hero-modal-comment" id="user-comment" name="user-comment"
+                placeholder="Text input"></textarea>
+            <div class="hero-modal-privacy-container">
+                <label class="hero-modal-privacy-label" for="privacy-agreement">
+                    <input class="hero-modal-checkbox visually-hidden" type="checkbox" id="privacy-agreement"
+                        name="privacy-agreement">
+                    <span>
+                        <svg class="hero-modal-checkbox-icon" width="10" height="7">
+                            <use href="./images/icons.svg#icon-check-inactive"></use>
+                        </svg>
+                    </span>I agree to the processing of my personal
+                    data&nbsp;</label>
+                <a class="hero-modal-privacy-link" href="">Privacy Policy</a>
+            </div>
+            <button class="hero-modal-button" type="submit">Send</button>
+        </div>
+    </div>
 </body>
 
 </html>
