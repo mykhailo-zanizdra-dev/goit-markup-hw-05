@@ -312,7 +312,7 @@ address {
   color: #8e8f99;
 }
 
-.hero-modal-custom-checkbox {
+span.hero-modal-custom-checkbox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
