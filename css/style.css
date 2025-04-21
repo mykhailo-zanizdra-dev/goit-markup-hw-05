@@ -229,6 +229,9 @@ address {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-input {
@@ -242,6 +245,11 @@ address {
 .hero-modal-comment {
   padding: 8px 16px;
   min-height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  resize: none;
 }
 
 .hero-modal-input:focus,
@@ -268,8 +276,9 @@ address {
 .hero-modal-icon {
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-label {
@@ -285,7 +294,7 @@ address {
   margin-top: 16px;
   display: flex;
   align-items: center;
-
+  margin-bottom: 24px;
 }
 
 .hero-modal-checkbox-icon {
@@ -293,35 +302,37 @@ address {
 }
 
 .hero-modal-privacy-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: rgba(46, 47, 66, 0.4);
+  color: #8e8f99;
 }
 
-.hero-modal-privacy-label span {
+.hero-modal-checkbox-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 16px;
   height: 16px;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   margin-right: 4px;
+  fill: transparent;
+  background-color: transparent;
 }
 
-.hero-modal-checkbox:checked+span {
+input.hero-modal-checkbox:checked+label span {
   background-color: #404bbf;
 }
 
 .hero-modal-privacy-link {
   color: #4d5ae5;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
