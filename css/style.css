@@ -149,8 +149,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -168,6 +168,7 @@ address {
   border-radius: 4px;
   padding: 72px 24px 24px;
   width: 408px;
+  min-height: 584px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -179,11 +180,6 @@ address {
 
 .hero-modal-close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-modal-close-icon:hover,
-.hero-modal-close-icon:focus {
-  fill: #ffffff;
 }
 
 .hero-modal-close-button {
@@ -206,6 +202,11 @@ address {
 .hero-modal-close-button:focus {
   background-color: #404bbf;
   border: none;
+}
+
+.hero-modal-close-button:hover .hero-modal-close-icon,
+.hero-modal-close-button:focus .hero-modal-close-icon {
+  fill: #ffffff;
 }
 
 .hero-modal-header {
@@ -234,6 +235,10 @@ address {
   height: 40px;
 }
 
+.hero-modal-comment-wrapper {
+  margin-bottom: 16px;
+}
+
 .hero-modal-comment {
   padding: 8px 16px;
   min-height: 120px;
@@ -256,6 +261,10 @@ address {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.hero-modal-input-field {
+  position: relative;
+}
+
 .hero-modal-icon {
   position: absolute;
   top: 50%;
@@ -264,6 +273,7 @@ address {
 }
 
 .hero-modal-label {
+  display: block;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
